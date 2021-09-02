@@ -151,7 +151,7 @@ img {
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
-  max-width: 80%;
+  max-width: 100%;
   align-items: center;
 }
 
@@ -338,6 +338,9 @@ img {
   padding-top: -10rem;
 }
 /*=============== SKILLS ===============*/
+.specs {
+  transform: translateY(-10rem);
+}
 .specs__container {
   position: relative;
   grid-gap: 5rem;
@@ -507,13 +510,13 @@ img {
 }
 .clown__img {
   width: 250px;
-  rotate: -90deg;
   border-radius: 20px;
-  transition: .5s;
+  transition: 1s;
 }
 
-.clown__img:hover {
+.clown__img:hover, .clown__img:focus {
   border-radius: 0;
+  filter: drop-shadow(0 0 20px black);
 }
 
 .case__description {
@@ -522,6 +525,9 @@ img {
 }
 
 /*=============== GET IN TIUCH ===============*/
+.discount{
+  transform: translateY(-20rem);
+}
 .discount__container {
   position: relative;
   background-color: var(--container-color);
@@ -548,8 +554,16 @@ img {
   transition: 1s;
 }
 
+.discount__img:hover, .discount__img:focus {
+  border-radius: 0;
+  filter: drop-shadow(0 0 20px black);
+}
+
 
 /*=============== PROJECTS ===============*/
+.products{
+  transform: translateY(-17rem);
+}
 .products__line {
   line-height: 4rem;
 }
@@ -613,6 +627,9 @@ img {
 }
 
 /*=============== FOOTER ===============*/
+.footer{
+  transform: translateY(-15rem);
+}
 .footer__container {
   display: flex;
   flex-direction: row;
@@ -767,7 +784,7 @@ img {
     right: 5rem;
   }
   .nav__menu{
-    max-width: 90%;
+    max-width: 100%;
   }
   .home__img {
     top: -2rem;
@@ -843,6 +860,9 @@ img {
 }
 .footer__social{
   padding-top: 3em;
+}
+.footer{
+  transform: translateY(-4rem);
 }
 
 /* For medium devices */
@@ -921,6 +941,10 @@ img {
     flex-direction: row;
     column-gap: 3.5rem;
   }
+  .nav{
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
   .nav__link {
     font-size: var(--normal-font-size);
     text-transform: initial;
@@ -961,6 +985,9 @@ img {
   }
   .case__description {
     margin-bottom: var(--mb-2);
+  }
+  .discount{
+    transform: translateY(-15rem);
   }
   .discount__container {
     grid-template-columns: 250px max-content;
