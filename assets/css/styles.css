@@ -503,13 +503,9 @@ img {
   padding: 5rem 0 3rem;
 }
 
-.case__img {
-  position: absolute;
-  left: -7rem;
-  margin-bottom: 2rem ;
-}
 .clown__img {
   width: 250px;
+  rotate: -90deg;
   border-radius: 20px;
   transition: 1s;
 }
@@ -802,6 +798,10 @@ img {
     padding-top: 6.5rem;
   }
 
+  .clown__img{
+    rotate: -90deg;
+  }
+
   .specs__img {
     width: 200px;
     left: 45%;
@@ -825,12 +825,6 @@ img {
   #node {
     margin-left: 0;
   }
-
-  .case__img{
-    position: relative;
-    top: 0;
-    left: 0%;
-  }
   .case__container {
     grid-template-columns: max-content 250px;
     justify-content: center;
@@ -842,7 +836,7 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     width: 70%;
-    padding: 0;
+    padding-top: 2.5rem;
   }
 
   .discount__container{
@@ -893,15 +887,15 @@ img {
     justify-items: center;
     align-items: center;
   }
-  .case__img {
-    position: initial;
+  .clown__img{
+    rotate: -90deg;
   }
   .case__data {
     display: flex;
     flex-wrap: wrap;
     width: 60%;
     justify-content: center;
-    padding: 0;
+    padding-top: 2.5rem;
   }
   .case__container {
     grid-template-columns: max-content 250px;
