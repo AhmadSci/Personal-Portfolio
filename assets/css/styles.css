@@ -771,8 +771,8 @@ img {
   }
   .home__img {
     top: -2rem;
-    width: 600px;
-    right: -3rem;
+    width: 500px;
+    right: 1rem;
   }
   .home__blob-img{
     width: 100%;
