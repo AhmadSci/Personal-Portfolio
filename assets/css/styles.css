@@ -505,7 +505,6 @@ img {
 
 .clown__img {
   width: 250px;
-  rotate: -90deg;
   border-radius: 20px;
   transition: 1s;
 }
@@ -798,10 +797,6 @@ img {
     padding-top: 6.5rem;
   }
 
-  .clown__img{
-    rotate: -90deg;
-  }
-
   .specs__img {
     width: 200px;
     left: 45%;
@@ -886,9 +881,6 @@ img {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-  }
-  .clown__img{
-    rotate: -90deg;
   }
   .case__data {
     display: flex;
