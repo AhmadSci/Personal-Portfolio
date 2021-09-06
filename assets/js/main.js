@@ -69,10 +69,9 @@ window.addEventListener('scroll', scrollActive)
 const images = document.querySelectorAll(".paraimg");
 const homeImg = document.querySelector(".home__blob");
 
+
 document.addEventListener("mousemove", parallaxhome)
 document.addEventListener("mousemove", parallaxskills);
-document.addEventListener("scroll", parallaxhome)
-document.addEventListener("scroll", parallaxskills);
 
 function parallaxskills(e) {
     images.forEach(img => {
@@ -102,6 +101,9 @@ function openInNewTab(url) {
     window.open(url, '_blank').focus();
 }
 
+/*=============== ACTIVE STATE ===============*/
+
+
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
     distance: '60px',
@@ -114,8 +116,10 @@ sr.reveal(`.home__header, .section__title`,{delay: 500})
 sr.reveal(`.home__footer`,{delay: 600})
 sr.reveal(`.home__img`,{delay: 700, origin: 'top'})
 
-sr.reveal(`.sponsor__img, .products__card, .footer__logo, .footer__content, .footer__copy, .footer__social-link`,{origin: 'top', interval: 100})
-sr.reveal(`.specs__data, .discount__animate`,{origin: 'left', interval: 100})
-sr.reveal(`.specs__img, .discount__img`,{origin: 'right'})
-sr.reveal(`.case__img`,{origin: 'top'})
-sr.reveal(`.case__data`)
+sr.reveal(`.section__subtitle, .contact__info, .contact__icon, .contact__title, .contact__subtitle, .contact__content, .contact__button`,{delay: 100, interval: 50})
+
+sr.reveal(`.socials__img, .projects__card, .footer__logo, .footer__content, .footer__copy, .footer__social-link, .footer__title`,{origin: 'top', interval: 100})
+sr.reveal(`.skills__data, .projectInMind__animate`,{origin: 'left', interval: 100})
+sr.reveal(`.skills__img, .projectInMind__img`,{origin: 'right'})
+sr.reveal(`.about__img`,{origin: 'top'})
+sr.reveal(`.about__data`)
