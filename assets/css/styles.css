@@ -930,6 +930,7 @@ img {
   .projects__container {
     grid-template-columns: 142px;
     justify-content: center;
+    padding-top: 3rem;
   }
 }
 .footer__social{
@@ -989,6 +990,7 @@ img {
   .projects__container {
     grid-template-columns: repeat(3, 142px);
     justify-content: center;
+    padding-top: 5rem;
   }
 }
 
