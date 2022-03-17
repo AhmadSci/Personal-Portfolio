@@ -386,15 +386,26 @@ img {
   margin-left: -7%;
 }
 
+.skills__data:nth-child(6) {
+  margin-left: .1rem;
+}
+
+.skills__data:nth-child(5) {
+  margin-left: -1rem;
+}
+
+.skills__data:nth-child(4) {
+  margin-left: -2rem;
+}
 .skills__data:nth-child(3) {
   margin-left: -2rem;
 }
 
-.skills__data:nth-child(2), .skills__data:nth-child(4) {
+.skills__data:nth-child(2) {
   margin-left: -1rem;
 }
 
-.skills__data:nth-child(1), .skills__data:nth-child(5) {
+.skills__data:nth-child(1) {
   margin-left: 0rem;
 }
 
@@ -456,6 +467,16 @@ img {
   grid-column: 4 / -1;
   grid-row: 1;
   padding-top: 20rem;
+  width: 80%;
+  opacity: .5;
+  z-index: -1;
+  filter: drop-shadow(0 0 0.75rem black);
+}
+
+#para6 {
+  grid-column: 8 / -1;
+  grid-row: 1;
+  padding-top: 4rem;
   width: 80%;
   opacity: .5;
   z-index: -1;
@@ -903,7 +924,7 @@ img {
   }
 
   #node {
-    margin-left: 0;
+    margin-left: 0px;
   }
   .about__container {
     grid-template-columns: max-content 250px;
